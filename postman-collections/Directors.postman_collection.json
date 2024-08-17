@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "81cd766b-393e-4a66-84e1-cc0e71224759",
+		"name": "Directors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25396387"
+	},
+	"item": [
+		{
+			"name": "Get Director By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE}}/directors/4",
+					"host": [
+						"{{BASE}}"
+					],
+					"path": [
+						"directors",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Director",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "// {\n//     \"name\": \"Richard Linklater\",\n//     \"date_of_birth\": \"1960-07-30\",\n//     \"gender\": \"M\",\n//     \"nationality\": \"American\"\n// }\n\n[\n    {\n        \"name\": \"Steven Spielberg\",\n        \"date_of_birth\": \"1946-12-18\",\n        \"gender\": \"M\",\n        \"nationality\": \"American\"\n    },\n    {\n        \"name\": \"Martin Scorsese\",\n        \"date_of_birth\": \"1942-11-17\",\n        \"gender\": \"M\",\n        \"nationality\": \"American\"\n    },\n    {\n        \"name\": \"Christopher Nolan\",\n        \"date_of_birth\": \"1970-07-30\",\n        \"gender\": \"M\",\n        \"nationality\": \"British-American\"\n    },\n    {\n        \"name\": \"Quentin Tarantino\",\n        \"date_of_birth\": \"1963-03-27\",\n        \"gender\": \"M\",\n        \"nationality\": \"American\"\n    },\n    {\n        \"name\": \"Kathryn Bigelow\",\n        \"date_of_birth\": \"1951-11-27\",\n        \"gender\": \"F\",\n        \"nationality\": \"American\"\n    },\n    {\n        \"name\": \"Sofia Coppola\",\n        \"date_of_birth\": \"1971-05-14\",\n        \"gender\": \"F\",\n        \"nationality\": \"American\"\n    },\n    {\n        \"name\": \"Guillermo del Toro\",\n        \"date_of_birth\": \"1964-10-09\",\n        \"gender\": \"M\",\n        \"nationality\": \"Mexican\"\n    },\n    {\n        \"name\": \"Bong Joon-ho\",\n        \"date_of_birth\": \"1969-09-14\",\n        \"gender\": \"M\",\n        \"nationality\": \"South Korean\"\n    },\n    {\n        \"name\": \"Greta Gerwig\",\n        \"date_of_birth\": \"1983-08-04\",\n        \"gender\": \"F\",\n        \"nationality\": \"American\"\n    },\n    {\n        \"name\": \"Pedro Almodóvar\",\n        \"date_of_birth\": \"1949-09-25\",\n        \"gender\": \"M\",\n        \"nationality\": \"Spanish\"\n    }\n]\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}/directors",
+					"host": [
+						"{{BASE}}"
+					],
+					"path": [
+						"directors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Directors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE}}/directors",
+					"host": [
+						"{{BASE}}"
+					],
+					"path": [
+						"directors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Director By ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"JJJJJ\",\n    \"date_of_birth\": \"2000-02-25\",\n    \"gender\": \"M\",\n    \"nationality\": \"JJJJJ\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}/directors/999",
+					"host": [
+						"{{BASE}}"
+					],
+					"path": [
+						"directors",
+						"999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Director",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BASE}}/directors/5",
+					"host": [
+						"{{BASE}}"
+					],
+					"path": [
+						"directors",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,27 @@
+{
+	"info": {
+		"_postman_id": "e6c97be9-3dd8-4a65-97a6-f42b727e7763",
+		"name": "Health Check",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25396387"
+	},
+	"item": [
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE}}/healthcheck",
+					"host": [
+						"{{BASE}}"
+					],
+					"path": [
+						"healthcheck"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
